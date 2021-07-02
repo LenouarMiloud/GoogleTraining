@@ -1,7 +1,11 @@
 package com.fsociety.tiptime
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.KeyEvent
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import com.fsociety.tiptime.databinding.ActivityMainBinding
 import java.text.NumberFormat
 
@@ -34,6 +38,17 @@ class MainActivity : AppCompatActivity() {
         }
         val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
         binding.tipResult.text = getString(R.string.tip_amount, formattedTip)
+    }
+
+    private fun handelKeyEvent(view : View, keyCode: Int):Boolean{
+        if(keyCode == KeyEvent.KEYCODE_ENTER){
+            //Hide the Keyboard
+            val inputMethodManager =
+                getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                inputMethodManager.hideSoftInputFromWindow(view.windowToken,0)
+            return true
+        }
+        return false
     }
 
 }
