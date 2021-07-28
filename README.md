@@ -1,6 +1,9 @@
 # GoogleTraining
 this repo will contain all the created app in Google training time with the kotlin language 
 
+# 1 - Roller Dice App
+this is a simple app witch help to roll the die in the main app 
+
 # 2 - Tip Time App
 this app is for calculate the tip Time from the cost of service
 [here](https://github.com/LenouarMiloud/GoogleTraining/tree/main/2-%20TipTime).
