@@ -12,6 +12,6 @@ class MainActivity : AppCompatActivity() {
 
         val textViewSize : TextView = findViewById(R.id.sizeTextView)
         textViewSize.text = Datasource().loadAffirmations().size.toString()
-        
+
     }
 }
