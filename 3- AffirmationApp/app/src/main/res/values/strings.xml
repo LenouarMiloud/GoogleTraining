@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AffirmationsApp</string>
+    <string name="app_name">AffirmationApp</string>
 
     //Affirmations List
     <string name="affirmation1">I am strong.</string>

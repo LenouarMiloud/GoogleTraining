@@ -1,10 +1,10 @@
-package com.fsociety.affirmationsapp
+package com.fsociety.affirmationapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
-import com.fsociety.affirmationsapp.adapter.ItemAdapter
-import com.fsociety.affirmationsapp.data.DataSource
+import com.fsociety.affirmationapp.adapter.ItemAdapter
+import com.fsociety.affirmationapp.data.DataSource
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = ItemAdapter(this,MyAffirmation)
         recyclerView.setHasFixedSize(true)
 
-        
+
 
     }
 }

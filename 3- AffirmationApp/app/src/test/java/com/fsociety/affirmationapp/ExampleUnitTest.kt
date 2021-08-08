@@ -1,4 +1,4 @@
-package com.fsociety.affirmationsapp
+package com.fsociety.affirmationapp
 
 import org.junit.Test
 

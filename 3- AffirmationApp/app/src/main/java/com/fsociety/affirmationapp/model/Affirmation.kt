@@ -1,4 +1,4 @@
-package com.fsociety.affirmationsapp.model
+package com.fsociety.affirmationapp.model
 
 data class Affirmation(val stringResourceID : Int) {
 }
