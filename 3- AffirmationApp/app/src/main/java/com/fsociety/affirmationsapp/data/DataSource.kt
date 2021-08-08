@@ -1,12 +1,11 @@
-package com.example.affirmations.data
+package com.fsociety.affirmationsapp.data
 
 import com.fsociety.affirmationsapp.R
 import com.fsociety.affirmationsapp.model.Affirmation
 
+class DataSource {
 
-class Datasource {
-
-    fun loadAffirmations(): List<Affirmation> {
+    fun loadAffirmation() : List<Affirmation>{
         return listOf<Affirmation>(
                 Affirmation(R.string.affirmation1),
                 Affirmation(R.string.affirmation2),
@@ -20,4 +19,5 @@ class Datasource {
                 Affirmation(R.string.affirmation10)
         )
     }
+
 }
