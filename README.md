@@ -14,5 +14,6 @@ this app is for calculate the tip Time from the cost of service
 this app is for showing a couple of affirmation in the screen 
 [here](https://github.com/LenouarMiloud/GoogleTraining/tree/main/3-%20AffirmationApp).
 
-![Affirmation App](https://github.com/LenouarMiloud/GoogleTraining/blob/main/Screenshots/AffirmationApp.jpg)
+![Affirmation App](https://github.com/LenouarMiloud/GoogleTraining/blob/main/Screenshots/AffirmationApp.jpg) 
+![](https://github.com/LenouarMiloud/GoogleTraining/blob/main/Screenshots/AffirmationApp%202.jpg)
 
