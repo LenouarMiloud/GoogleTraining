@@ -1,59 +1,81 @@
 package com.example.wordsapp
 
 import android.os.Bundle
+import android.view.*
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.wordsapp.databinding.FragmentLetterListBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [LetterListFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class LetterListFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+
+    //getting reference of FragmentLetterListBinding
+    private var _binding: FragmentLetterListBinding? = null;
+
+    private val binding get() = _binding!!
+    private lateinit var recyclerView: RecyclerView
+    private var isLinearLayoutManager = true
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+        //display the option menu
+        setHasOptionsMenu(true);
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_letter_list, container, false)
+        _binding = FragmentLetterListBinding.inflate(inflater,container,false)
+        val view = binding.root
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment LetterListFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            LetterListFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        recyclerView = binding.recyclerView
+        chooseLayout()
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.layout_menu,menu)
+        val LayoutButton = menu.findItem(R.id.action_switch_layout)
+        setIcon(LayoutButton)
+    }
+
+    private fun chooseLayout() {
+        if (isLinearLayoutManager) {
+            recyclerView.layoutManager = LinearLayoutManager(context)
+        } else {
+            recyclerView.layoutManager = GridLayoutManager(context, 4)
+        }
+        recyclerView.adapter = LetterAdapter()
+    }
+
+    private fun setIcon(menuItem: MenuItem?) {
+        if (menuItem == null)
+            return
+
+        // Set the drawable for the menu icon based on which LayoutManager is currently in use
+
+        // An if-clause can be used on the right side of an assignment if all paths return a value.
+        // The following code is equivalent to
+        // if (isLinearLayoutManager)
+        //     menu.icon = ContextCompat.getDrawable(this, R.drawable.ic_grid_layout)
+        // else menu.icon = ContextCompat.getDrawable(this, R.drawable.ic_linear_layout)
+        menuItem.icon =
+            if (isLinearLayoutManager)
+                ContextCompat.getDrawable(context!!, R.drawable.ic_grid_layout)
+            else ContextCompat.getDrawable(context!!, R.drawable.ic_linear_layout)
+    }
+
 }
