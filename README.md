@@ -1,4 +1,4 @@
-# GoogleTraining
+# GoogleTraining 😍 📱
 this repo will contain all the created app in Google training time with the kotlin language 
 
 ### 1 - Roller Dice App
@@ -28,3 +28,5 @@ this is a small app work like a restaurent app
 ### 6 - Unscramle App
 this is a small word game 
 [here](https://github.com/LenouarMiloud/GoogleTraining/tree/main/6-%20android-basics-kotlin-unscramble-app-main)
+
+![](https://github.com/LenouarMiloud/GoogleTraining/blob/main/Screenshots/UnscrambleApp.png)
