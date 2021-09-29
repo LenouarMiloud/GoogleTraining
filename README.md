@@ -17,3 +17,14 @@ this app is for showing a couple of affirmation in the screen
 ![Affirmation App](https://github.com/LenouarMiloud/GoogleTraining/blob/main/Screenshots/AffirmationApp.jpg) 
 ![](https://github.com/LenouarMiloud/GoogleTraining/blob/main/Screenshots/AffirmationApp%202.jpg)
 
+### 4 - Words App
+this app show a couple of words star with a caracter you choose 
+[here](https://github.com/LenouarMiloud/GoogleTraining/tree/main/4-%20android-basics-kotlin-words-app)
+
+### 5 - Dessert Clicker
+this is a small app work like a restaurent app
+[here](https://github.com/LenouarMiloud/GoogleTraining/tree/main/5-%20android-basics-kotlin-dessert-clicker-app-starter)
+
+### 6 - Unscramle App
+this is a small word game 
+[here](https://github.com/LenouarMiloud/GoogleTraining/tree/main/6-%20android-basics-kotlin-unscramble-app-main)
