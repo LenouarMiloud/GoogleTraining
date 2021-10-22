@@ -30,3 +30,4 @@ this is a small word game
 [here](https://github.com/LenouarMiloud/GoogleTraining/tree/main/6-%20android-basics-kotlin-unscramble-app-main)
 
 ![](https://github.com/LenouarMiloud/GoogleTraining/blob/main/Screenshots/UnscrambleApp.png)
+![](https://github.com/LenouarMiloud/GoogleTraining/blob/main/Screenshots/UnscrambleApp1.jpg)
