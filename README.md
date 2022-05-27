@@ -6,7 +6,9 @@ this is a simple app witch help to roll the die in the main app
 
 ### 2 - Tip Time App
 this app is for calculate the tip Time from the cost of service
+[here](https://github.com/LenouarMiloud/GoogleTraining/tree/main/2-%20TipTime)
 
+![tipTime](https://user-images.githubusercontent.com/29558298/170680555-299d65f9-126a-4c1e-8ef7-a440268383c5.jpg)
 
 ### 3 - Affirmation App
 this app is for showing a couple of affirmation in the screen 
