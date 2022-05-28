@@ -18,4 +18,6 @@
         <!-- For switches -->
         <item name="switchStyle">@style/Widget.TipTime.CompoundButton.Switch</item>
     </style>
+
+
 </resources>
